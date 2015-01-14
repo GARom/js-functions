@@ -86,12 +86,12 @@ function calculate(operation, x, y) {
       answer = x - y;
       string = x + ' - '  + y + ' = ' +answer;
       break;
-    case "multiply":
+    case 'multiply':
       answer = x * y;
       string = x + ' * '  + y + ' = ' +answer;
       break;
     case 'divide':
-      answer = x / y
+      answer = x / y;
       string = x + ' / ' + y + ' = '+  answer;
       break;
     }
@@ -101,22 +101,33 @@ function calculate(operation, x, y) {
 
   }
 
-
-
     /**
      * Returns true if `a` is greater than `b`.
      * @param {number} a
      * @param {number} b
      * @return {boolean} `a` is larger than `b`
      */
-
+function isGreaterThan(a, b) {
+  if (a > b) {
+    return true
+  }else {
+    return false
+  }
+}
 /**
  * Returns true if `a` is less than `b`.
  * @param {number} a
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
-
+function isLessThan(a, b) {
+  if (a < b) {
+    return true
+  }else {
+    return false
+  }
+}
+/**
 /**
  * Returns true if `a` and `b` are equal.
  * @param {number} a
