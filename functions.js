@@ -134,21 +134,34 @@ function isLessThan(a, b) {
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
-
+function areEqual(a, b) {
+  if (a === b) {
+    return true
+  }else if (a ==b){
+    return false
+  } else {
+    return false
+  }
+}
+/**
 /**
  * Returns the smallest value of two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the smallest number
  */
-
+function minimum(x, y) {
+  return Math.min(x, y);
+}
 /**
  * Returns the largest value of two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the largest number
  */
-
+function maximum(x, y) {
+  return Math.max(x, y);
+}
 /**
  * Returns true if `n` is even.
  * @param {number} n
