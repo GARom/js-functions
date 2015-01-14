@@ -179,7 +179,13 @@ function isEven(n) {
  * @param {number} n
  * @return {boolean} the number is odd
  */
-
+function isOdd(n) {
+  if (n%2 !== 0) {
+    return true
+  }else {
+    return false
+  }
+}
 /**
  * Returns a letter grade.
  * "A": 90-100%
@@ -191,6 +197,21 @@ function isEven(n) {
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
+ function letterGrade(score, total) {
+  if ((score/total)<=1.0 && (score/total)>=0.9) {
+    return "A";
+  }else if ((score/total)<=0.89 && (score/total)>=0.8) {
+    return "B";
+  }else if ((score/total)<=0.79 && (score/total)>=0.7) {
+    return "C";
+  }else if ((score/total)<=0.699 && (score/total)>=0.6) {
+    return "D";
+  }else if ((score/total)<=0.59 && (score/total)>=0) {
+    return "F";
+  }
+ }
+ 
+
 
 /**
  * Checks if a `restaurant` object has are `views` field.
