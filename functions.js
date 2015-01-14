@@ -28,21 +28,27 @@ function decrease (number){
  * @param {number} y
  * @return {number} the sum
  */
-
+function add (x, y) {
+  return x+y
+}
 /**
  * Subtracts the second number from the first.
  * @param {number} x
  * @param {number} y
  * @return {number} the difference
  */
-
+function subtract (x, y) {
+  return x-y
+}
 /**
  * Multiplies two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the product
  */
-
+function multiply(x, y) {
+  return x* y
+}
 /**
  * Divides the first number by the second.
  * @param {number} x
