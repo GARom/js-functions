@@ -74,13 +74,41 @@ function square(x) {
  * @param {number} y
  * @return {number} the result
  */
+function calculate(operation, x, y) {
+  var answer;
+  var string;
+  switch (operation){
+    case 'add': 
+      answer = x + y;
+      string = x + ' + ' + y + ' = ' + answer;
+      break;
+    case "subtract":
+      answer = x - y;
+      string = x + ' - '  + y + ' = ' +answer;
+      break;
+    case "multiply":
+      answer = x * y;
+      string = x + ' * '  + y + ' = ' +answer;
+      break;
+    case 'divide':
+      answer = x / y
+      string = x + ' / ' + y + ' = '+  answer;
+      break;
+    }
+    console.log(string)
+   
+    return answer;
 
-/**
- * Returns true if `a` is greater than `b`.
- * @param {number} a
- * @param {number} b
- * @return {boolean} `a` is larger than `b`
- */
+  }
+
+
+
+    /**
+     * Returns true if `a` is greater than `b`.
+     * @param {number} a
+     * @param {number} b
+     * @return {boolean} `a` is larger than `b`
+     */
 
 /**
  * Returns true if `a` is less than `b`.
