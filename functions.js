@@ -55,13 +55,17 @@ function multiply(x, y) {
  * @param {number} y
  * @return {number} the quotient
  */
-
+function divide (x, y) {
+  return x/y
+}
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
  * @return {number} squared
  */
-
+function square(x) {
+  return x*=x
+}
 /**
  * Performs a mathematical operation on two numbers.
  * Also prints out the equation: (i.e.) "1 + 5 = 6" or "8 / 2 = 4".
