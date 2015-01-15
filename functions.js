@@ -210,7 +210,7 @@ function isOdd(n) {
     return "F";
   }
  }
- 
+
 
 
 /**
@@ -219,6 +219,18 @@ function isOdd(n) {
  * set itsreviews` field to 1.
  * @param {object} restaurant represents a restaurant
  */
+function incrementReviews (restaurant) {
+  if (!restaurant || (typeof restaurant !== 'object')) {
+    console.log('ERROR');
+    return;
+  }
+  if (restaurant.hasOwnProperty('reviews')) {
+    restaurant.reviews++;
+  } else {
+    restaurant.reviews = 1;
+  }
+  return restaurant;
+}
 
 /**
  * Joins two strings with a space.
@@ -226,7 +238,9 @@ function isOdd(n) {
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
-
+function combine(word1, word2) {
+  return String(word1)+ " " + String(word2);
+}
 /**
  * Returns a circle object with the properties `circumference` and `area`.
  * Use Math.PI for the value π.
@@ -234,3 +248,6 @@ function isOdd(n) {
  * @param {number} radius
  * @return {object} circle
  */
+function createCircle(radius) {
+
+}
