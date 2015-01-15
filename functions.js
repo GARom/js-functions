@@ -221,8 +221,7 @@ function isOdd(n) {
  */
 function incrementReviews (restaurant) {
   if (!restaurant || (typeof restaurant !== 'object')) {
-    console.log('ERROR');
-    return;
+    return false;
   }
   if (restaurant.hasOwnProperty('reviews')) {
     restaurant.reviews++;
@@ -249,5 +248,9 @@ function combine(word1, word2) {
  * @return {object} circle
  */
 function createCircle(radius) {
-
+  var circle = {
+    area: Math.PI*( radius * radius),
+    circumference: Math.PI*(radius * 2)
+  };
+  return circle;
 }
